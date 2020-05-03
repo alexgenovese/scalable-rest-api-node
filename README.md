@@ -1,6 +1,6 @@
 # Scalable Rest API in Node.js
 
-
+[![Build Status](https://travis-ci.org/alexgenovese/scalable-rest-api-node.svg?branch=master)](https://travis-ci.org/alexgenovese/scalable-rest-api-node)
 
 One of the most popular Node.js frameworks is Express.js. It offers an easy approach to building applications at different scales. As a project grows, it becomes hard to scale at some point adding new routes, services and it really makes the job very hard.
 
