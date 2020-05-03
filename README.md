@@ -1,10 +1,10 @@
 # Scalable Rest API in Node.js
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=How%20to%20build%20a%20Node.js%20API%20Rest%20that%20scales&url=https://github.com/alexgenovese/scalable-rest-api-node)
+
 
 One of the most popular Node.js frameworks is Express.js. It offers an easy approach to building applications at different scales. As a project grows, it becomes hard to scale at some point adding new routes, services and it really makes the job very hard.
 
-It's a boilerplate of Rest API build in Node.
+It's a boilerplate Rest API in Node
 
 # Installation
 
@@ -15,7 +15,7 @@ npm install
 
 ## Running 
 
-All requests in frontend needs to be written in this way: 
+Make all requests, in frontend, written in this way: 
 
 ```
 // Make a request using the Fetch API
