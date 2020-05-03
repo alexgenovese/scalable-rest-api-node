@@ -4,14 +4,46 @@
 
 One of the most popular Node.js frameworks is Express.js. It offers an easy approach to building applications at different scales. As a project grows, it becomes hard to scale at some point adding new routes, services and it really makes the job very hard.
 
-I tried to answer creating this repo for a product I'm working on. It's a boilerplate of Rest API build in Node.
+It's a boilerplate of Rest API build in Node.
 
-## Get Started
-1. Clone this repository
-2. Run `npm install` inside its root folder.
-3. run `nodemon index.js`
+# Installation
 
-## Client side for this project
-To test this project:
-1. npm run start
-2. using browser connecting to http://localhost:3000/api/v1/user/me
+```
+npm install
+``` 
+
+
+## Running 
+
+All requests in frontend needs to be written in this way: 
+
+```
+// Make a request using the Fetch API
+fetch('/process', {
+  credentials: 'same-origin', // <-- includes cookies in the request
+  headers: {
+    'CSRF-Token': token // <-- is the csrf token as a header
+  },
+  method: 'POST',
+  body: {
+    favoriteColor: 'blue'
+  }
+})
+```
+
+Using browser connect to http://localhost:3000/api/v1/user/me
+
+
+## Built With
+
+* [Node JS](https://nodejs.org/it/)
+
+## Contributing
+
+Please read contact me.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
