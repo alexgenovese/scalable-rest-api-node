@@ -4,7 +4,7 @@
 
 One of the most popular Node.js frameworks is Express.js. It offers an easy approach to building applications at different scales. As a project grows, it becomes hard to scale at some point adding new routes, services and it really makes the job very hard.
 
-I tried to answer creating this repo for a product I'm working on and I think can make the life easier to somebody and It's still evolving.
+I tried to answer creating this repo for a product I'm working on. It's a boilerplate of Rest API build in Node.
 
 ## Get Started
 1. Clone this repository
