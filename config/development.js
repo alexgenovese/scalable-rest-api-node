@@ -2,9 +2,7 @@ module.exports = {
     hostname: 'localhost',
     port: 3000,
     settings: {
-      cookie_session_expires: 5,
-      cookie_session_name: 'session',
-      cookie_user_data: 'user'
+      cookie_csrf_name: 'XSRF-TOKEN'
     },
     api: {
       endpoint: '/api',
