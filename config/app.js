@@ -5,8 +5,7 @@ const cookieParser = require('cookie-parser')
 const helmet = require('helmet')
 const cors = require('cors')
 const morgan = require('morgan')
-const xss = require('xss-clean')
-const csrf = require('csurf')
+const csrf = require('csrf')
 const rateLimit = require('express-rate-limit')
 
 module.exports = function () {
@@ -38,9 +37,6 @@ module.exports = function () {
             res.locals.csrftoken = req.csrfToken();
             next();
         })
-        
-        // Data Sanitization against XSS attacks
-        server.use(xss())
         
         // Rate Limiting for all requests
         const limit = rateLimit({
