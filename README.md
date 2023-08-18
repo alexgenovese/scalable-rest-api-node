@@ -10,7 +10,11 @@ It's a boilerplate Rest API in Node
 
 ```
 npm install
+npm run start
 ``` 
+
+# Documentation
+This template was born thinking to a simple concept of Rest API easy to ship and manage for small projects and testing. In *config* folder you can setup all global variables for production and development env, the global endpoint and manage different api versions.
 
 
 ## Running 
@@ -37,10 +41,11 @@ Using browser connect to http://localhost:3000/api/v1/user/me
 ## Built With
 
 * [Node JS](https://nodejs.org/it/)
+* [express]
 
 ## Contributing
 
-Please read contact me.
+Update the code in a new branch and send a pull request. I'll validate your code and update the template. 
 
 ## License
 
