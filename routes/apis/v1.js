@@ -1,10 +1,8 @@
 const userController = require('../../controller/user')
 const express = require('express')
 const router = express.Router()
-const csrf = require('csrf')
-const csrfProtection = csrf({ cookie: true })
 
 // all the routes
-router.use('/users', csrfProtection, userController)
+router.use('/user', userController)
 
 module.exports = router;

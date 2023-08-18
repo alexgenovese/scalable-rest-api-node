@@ -5,7 +5,6 @@ const cookieParser = require('cookie-parser')
 const helmet = require('helmet')
 const cors = require('cors')
 const morgan = require('morgan')
-const csrf = require('csrf')
 const rateLimit = require('express-rate-limit')
 
 module.exports = function () {
@@ -24,19 +23,11 @@ module.exports = function () {
         server.use(helmet())
         server.use(cors())
         server.use(cookieParser())
-        server.use(csrf({cookie: true}))
 
         // Show in console all wrong requests
         server.use(morgan('combined', {
             skip: function (req, res) { return res.statusCode < 400 }
         }))
-
-        // Set xsrf cookie
-        server.use(function (req, res, next) {
-            res.cookie(config.settings.cookie_csrf_name, req.csrfToken());
-            res.locals.csrftoken = req.csrfToken();
-            next();
-        })
         
         // Rate Limiting for all requests
         const limit = rateLimit({
