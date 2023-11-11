@@ -24,7 +24,7 @@
     "nodemon": "^2.0.3"
   },
   "devDependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "cross-env": "^7.0.3",
     "jest": "^29.6.2",
     "supertest": "^6.3.3"
